@@ -85,6 +85,7 @@ namespace Gt3_server_csharp_aspnetcoremvc_sdk.Controllers.Sdk
         {
             paramDict.Add("gt", this.geetest_id);
             paramDict.Add("json_format", JSON_FORMAT);
+            paramDict.Add("sdk", VERSION);
             string register_url = API_URL + REGISTER_URL;
             this.Gtlog($"RequestRegister(): 验证初始化, 向极验发送请求, url={register_url}, params={JsonSerializer.Serialize(paramDict)}.");
             string origin_challenge = null;
