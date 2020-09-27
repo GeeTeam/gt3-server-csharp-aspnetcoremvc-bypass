@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+  using System;
 using System.Net;
 using System.IO;
 using System.Text;
@@ -80,6 +81,13 @@ namespace Gt3_server_csharp_aspnetcoremvc_sdk.Controllers.Sdk
             return this.libResult;
         }
 
+        public GeetestLibResult LocalRegister()
+        {
+            this.BuildRegisterResult("", "");
+            this.Gtlog($"LocalRegister(): bypass当前状态为fail，后续流程将进入宕机模式,={this.libResult}.");
+            return this.libResult;
+        }
+
         // 向极验发送验证初始化的请求，GET方式
         private string RequestRegister(IDictionary<string, string> paramDict)
         {
@@ -120,7 +128,7 @@ namespace Gt3_server_csharp_aspnetcoremvc_sdk.Controllers.Sdk
                 }
                 string challenge = randomStr.ToString();
                 var data = new { success = 0, gt = this.geetest_id, challenge = challenge, new_captcha = NEW_CAPTCHA };
-                this.libResult.SetAll(0, JsonSerializer.Serialize(data), "请求极验register接口失败，后续流程走宕机模式");
+                this.libResult.SetAll(0, JsonSerializer.Serialize(data), "bypass当前状态为fail，后续流程走宕机模式");
             }
             else
             {

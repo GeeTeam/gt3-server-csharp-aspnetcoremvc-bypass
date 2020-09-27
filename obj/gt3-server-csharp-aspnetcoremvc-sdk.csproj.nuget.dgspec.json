@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/ubuntu/liuquan/work/workspace/geetest/gt3-server-csharp-aspnetcoremvc-sdk/gt3-server-csharp-aspnetcoremvc-sdk.csproj": {}
+    "C:\\geetest_project\\gt3-server-csharp-aspnetcoremvc-sdk\\gt3-server-csharp-aspnetcoremvc-sdk.csproj": {}
   },
   "projects": {
-    "/home/ubuntu/liuquan/work/workspace/geetest/gt3-server-csharp-aspnetcoremvc-sdk/gt3-server-csharp-aspnetcoremvc-sdk.csproj": {
+    "C:\\geetest_project\\gt3-server-csharp-aspnetcoremvc-sdk\\gt3-server-csharp-aspnetcoremvc-sdk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ubuntu/liuquan/work/workspace/geetest/gt3-server-csharp-aspnetcoremvc-sdk/gt3-server-csharp-aspnetcoremvc-sdk.csproj",
+        "projectUniqueName": "C:\\geetest_project\\gt3-server-csharp-aspnetcoremvc-sdk\\gt3-server-csharp-aspnetcoremvc-sdk.csproj",
         "projectName": "gt3-server-csharp-aspnetcoremvc-sdk",
-        "projectPath": "/home/ubuntu/liuquan/work/workspace/geetest/gt3-server-csharp-aspnetcoremvc-sdk/gt3-server-csharp-aspnetcoremvc-sdk.csproj",
-        "packagesPath": "/home/ubuntu/.nuget/packages/",
-        "outputPath": "/home/ubuntu/liuquan/work/workspace/geetest/gt3-server-csharp-aspnetcoremvc-sdk/obj/",
+        "projectPath": "C:\\geetest_project\\gt3-server-csharp-aspnetcoremvc-sdk\\gt3-server-csharp-aspnetcoremvc-sdk.csproj",
+        "packagesPath": "C:\\Users\\13260\\.nuget\\packages\\",
+        "outputPath": "C:\\geetest_project\\gt3-server-csharp-aspnetcoremvc-sdk\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/ubuntu/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\13260\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -35,6 +37,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "CSRedisCore": {
+              "target": "Package",
+              "version": "[3.6.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -53,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

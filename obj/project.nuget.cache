@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "rAa/kV5J4mkrk8agANTZW/yM0nCQngt/8cTRKJ0qp/Omhz4brJlaXXXtjemb5uA9FHxWidBTvFGkmGvoQb8WnA==",
+  "dgSpecHash": "PCoxMKeMKzznShPLyUA3542wS/EYYBz3ZEEmtpknzj40/SCUYiJlZmGxOvIsQ1b2eoZi5ou0hKghfSSUHG6YGA==",
   "success": true,
-  "projectFilePath": "/home/ubuntu/liuquan/work/workspace/geetest/gt3-server-csharp-aspnetcoremvc-sdk/gt3-server-csharp-aspnetcoremvc-sdk.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\geetest_project\\gt3-server-csharp-aspnetcoremvc-sdk\\gt3-server-csharp-aspnetcoremvc-sdk.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\13260\\.nuget\\packages\\csrediscore\\3.6.5\\csrediscore.3.6.5.nupkg.sha512",
+    "C:\\Users\\13260\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\13260\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

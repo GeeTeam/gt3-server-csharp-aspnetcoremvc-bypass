@@ -16,6 +16,7 @@ namespace Gt3_server_csharp_aspnetcoremvc_sdk
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+
         }
 
         public IConfiguration Configuration { get; }
