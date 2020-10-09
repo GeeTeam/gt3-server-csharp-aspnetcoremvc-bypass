@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Web;
 
-namespace Gt3_server_csharp_aspnetcoremvc_sdk.Controllers.Sdk
+namespace Gt3_server_csharp_aspnetcoremvc_bypass.Controllers.Sdk
 {
     /*
      * sdk lib包，核心逻辑。
@@ -42,7 +42,7 @@ namespace Gt3_server_csharp_aspnetcoremvc_sdk.Controllers.Sdk
 
         private const int HTTP_TIMEOUT_DEFAULT = 5000; // 单位：毫秒
 
-        public const string VERSION = "csharp-aspnetcoremvc:3.1.0";
+        public const string VERSION = "csharp-aspnetcoremvc:3.1.1";
 
         // 极验二次验证表单传参字段 chllenge
         public const string GEETEST_CHALLENGE = "geetest_challenge";
@@ -53,8 +53,6 @@ namespace Gt3_server_csharp_aspnetcoremvc_sdk.Controllers.Sdk
         // 极验二次验证表单传参字段 seccode
         public const string GEETEST_SECCODE = "geetest_seccode";
 
-        // 极验验证API服务状态Session Key
-        public const string GEETEST_SERVER_STATUS_SESSION_KEY = "gt_server_status";
 
         public GeetestLib(string geetest_id, string geetest_key)
         {

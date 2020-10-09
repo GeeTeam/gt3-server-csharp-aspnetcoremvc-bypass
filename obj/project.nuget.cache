@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "PCoxMKeMKzznShPLyUA3542wS/EYYBz3ZEEmtpknzj40/SCUYiJlZmGxOvIsQ1b2eoZi5ou0hKghfSSUHG6YGA==",
+  "dgSpecHash": "80f51O4N8F81jTFyauahL1HhkBmakV4QKBpECgh7pFHdSlcnEx2AKnrqoVToV9iLXUP/fXkQPZrCbHtJ/3fi0Q==",
   "success": true,
-  "projectFilePath": "C:\\geetest_project\\gt3-server-csharp-aspnetcoremvc-sdk\\gt3-server-csharp-aspnetcoremvc-sdk.csproj",
+  "projectFilePath": "/home/wb/desktop/geetest_dev_projects/gt3-server-csharp-aspnetcoremvc-bypass/gt3-server-csharp-aspnetcoremvc-bypass.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\13260\\.nuget\\packages\\csrediscore\\3.6.5\\csrediscore.3.6.5.nupkg.sha512",
-    "C:\\Users\\13260\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\13260\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+    "/home/wb/.nuget/packages/csrediscore/3.6.5/csrediscore.3.6.5.nupkg.sha512",
+    "/home/wb/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/home/wb/.nuget/packages/system.valuetuple/4.5.0/system.valuetuple.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

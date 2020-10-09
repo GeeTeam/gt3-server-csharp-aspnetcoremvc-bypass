@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>gt3_server_csharp_aspnetcoremvc_sdk</RootNamespace>
+    <RootNamespace>gt3_server_csharp_aspnetcoremvc_bypass</RootNamespace>
     <OutputType>Exe</OutputType>
   </PropertyGroup>
 

@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Gt3_server_csharp_aspnetcoremvc_sdk.Controllers;
+using Gt3_server_csharp_aspnetcoremvc_bypass.Controllers;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Gt3_server_csharp_aspnetcoremvc_sdk
+namespace Gt3_server_csharp_aspnetcoremvc_bypass
 {
     public class Program
     {

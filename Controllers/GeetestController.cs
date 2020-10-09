@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
-using Gt3_server_csharp_aspnetcoremvc_sdk.Controllers.Sdk;
+using Gt3_server_csharp_aspnetcoremvc_bypass.Controllers.Sdk;
 using CSRedis;
 using System.Threading;
 using System.IO;
@@ -11,13 +11,13 @@ using System.Web;
 using System.Net;
 using Newtonsoft.Json;
 
-namespace Gt3_server_csharp_aspnetcoremvc_sdk.Controllers
+namespace Gt3_server_csharp_aspnetcoremvc_bypass.Controllers
 {
     public class GeetestController : Controller
     {
         public int HTTP_TIMEOUT_DEFAULT = 5000;
         public string BYPASS_URL = GeetestConfig.BYPASS_URL;
-        protected static string _connect_str = GeetestConfig.REDIS_HOST;
+        protected static string _connect_str = GeetestConfig.REDIS_SERVER;
         protected static CSRedisClient rds_conn = null;
         protected static object _lockObj_conn = new object();
         public IDictionary<string, string> paramDict = new Dictionary<string, string> { { "gt", GeetestConfig.GEETEST_ID } };
@@ -46,7 +46,7 @@ namespace Gt3_server_csharp_aspnetcoremvc_sdk.Controllers
             }
             catch (Exception e)
             {
-                //throw e;
+                Console.Write("HttpGet(): e=" + e + "\n");
                 return "{\"status\": \"fail\"}";
             }
             finally
@@ -62,7 +62,7 @@ namespace Gt3_server_csharp_aspnetcoremvc_sdk.Controllers
         {
             if (string.IsNullOrEmpty(_connect_str))
             {
-                Console.WriteLine("Connectstring is not set");
+                Console.WriteLine("Connectstring is not set" + "\n");
             }
             if (rds_conn == null)
             {
@@ -82,7 +82,7 @@ namespace Gt3_server_csharp_aspnetcoremvc_sdk.Controllers
             while (true)
             {
                 string resBody = HttpGet(BYPASS_URL, paramDict);
-                Console.Write("CheckStatus(): 返回body={resBody}.");
+                Console.Write("CheckStatus(): 返回body=." + resBody + DateTime.Now.ToString() + "\n");
 
                 ResBody res = JsonConvert.DeserializeObject<ResBody>(resBody);
                 if (rds_conn == null)
@@ -130,11 +130,6 @@ namespace Gt3_server_csharp_aspnetcoremvc_sdk.Controllers
             {
                 result = gtLib.LocalRegister();
             }
-            // 将结果状态写到session中，此处register接口存入session，后续validate接口会取出使用
-            // 注意，此demo应用的session是单机模式，格外注意分布式环境下session的应用
-            //HttpContext.Session.SetInt32(GeetestLib.GEETEST_SERVER_STATUS_SESSION_KEY, result.GetStatus());
-            //HttpContext.Session.SetString("userId", userId);
-            // 注意，不要更改返回的结构和值类型
             return Content(result.GetData(), "application/json;charset=UTF-8");
         }
 

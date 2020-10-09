@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "gt3_server_csharp_aspnetcoremvc_sdk": {
+    "gt3_server_csharp_aspnetcoremvc_bypass": {
       "commandName": "Project",
       "launchBrowser": true,
       "applicationUrl": "http://0:5001",

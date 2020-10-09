@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Gt3_server_csharp_aspnetcoremvc_sdk
+namespace Gt3_server_csharp_aspnetcoremvc_bypass
 {
     public class Startup
     {
@@ -24,13 +24,6 @@ namespace Gt3_server_csharp_aspnetcoremvc_sdk
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // session 设置
-            services.AddSession(options =>
-            {
-                options.IdleTimeout = TimeSpan.FromMinutes(10);
-                options.Cookie.HttpOnly = true;
-                options.Cookie.IsEssential = true;
-            });
             services.AddControllersWithViews();
         }
 
@@ -52,7 +45,6 @@ namespace Gt3_server_csharp_aspnetcoremvc_sdk
 
             app.UseAuthorization();
 
-            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {

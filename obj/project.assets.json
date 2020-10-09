@@ -135,26 +135,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\13260\\.nuget\\packages\\": {}
+    "/home/wb/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\geetest_project\\gt3-server-csharp-aspnetcoremvc-sdk\\gt3-server-csharp-aspnetcoremvc-sdk.csproj",
-      "projectName": "gt3-server-csharp-aspnetcoremvc-sdk",
-      "projectPath": "C:\\geetest_project\\gt3-server-csharp-aspnetcoremvc-sdk\\gt3-server-csharp-aspnetcoremvc-sdk.csproj",
-      "packagesPath": "C:\\Users\\13260\\.nuget\\packages\\",
-      "outputPath": "C:\\geetest_project\\gt3-server-csharp-aspnetcoremvc-sdk\\obj\\",
+      "projectUniqueName": "/home/wb/desktop/geetest_dev_projects/gt3-server-csharp-aspnetcoremvc-bypass/gt3-server-csharp-aspnetcoremvc-bypass.csproj",
+      "projectName": "gt3-server-csharp-aspnetcoremvc-bypass",
+      "projectPath": "/home/wb/desktop/geetest_dev_projects/gt3-server-csharp-aspnetcoremvc-bypass/gt3-server-csharp-aspnetcoremvc-bypass.csproj",
+      "packagesPath": "/home/wb/.nuget/packages/",
+      "outputPath": "/home/wb/desktop/geetest_dev_projects/gt3-server-csharp-aspnetcoremvc-bypass/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\13260\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/wb/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -194,7 +192,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gt3_server_csharp_aspnetcoremvc_sdk.Controllers.Sdk
+namespace Gt3_server_csharp_aspnetcoremvc_bypass.Controllers.Sdk
 {
     /*
      * sdk lib包的返回结果信息。
