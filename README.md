@@ -54,6 +54,8 @@ status|string|Y|success: 极验云服务正常<br>fail: 极验云服务异常
 ## 3.1 流程概述
 - 项目部署启动，监听器开始执行轮询定时器任务，每隔一段时间(可配置)向极验监控接口 (http://bypass.geetest.com/v1/bypass_status.php) 发起请求，并将返回的标识字段status(success/fail)存入redis数据库中(仅demo示例，可自行设计存储架构)。
 
+-  `当向极验监控接口发送请求出现返回的状态码为非200或显示请求超时的情况时，请将标识字段status设置为fail存入redis数据库中。`
+
 - 当客户端向服务端发起register验证初始化和validate二次验证请求时， 先从redis中取出极验状态的标识字段status。若是status是success则走正常流程，后续向极验云发起请求；若status是fail则走宕机模式，后续不论客户端还是服务端，都不会与极验云有任何交互。
 
 ## 3.2 示例部署环境
